@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+<string>Alabama-AL</string>
+<string>Alaska-AK</string>
+<string>Arizona-AZ</string>
+<string>Arkansas-AR</string>
+<string>California-CA</string>
+<string>Colorado-CO</string>
+<string>Connecticut-CT</string>
+<string>Delaware-DE</string>
+<string>District of Columbia-DC</string>
+<string>Florida-FL</string>
+<string>Georgia-GA</string>
+<string>Hawaii-HI</string>
+<string>Idaho-ID</string>
+<string>Illinois-IL</string>
+<string>Indiana-IN</string>
+<string>Iowa-IA</string>
+<string>Kansas-KS</string>
+<string>Kentucky-KY</string>
+<string>Louisiana-LA</string>
+<string>Maine-ME</string>
+<string>Montana-MT</string>
+<string>Nebraska-NE</string>
+<string>Nevada-NV</string>
+<string>New Hampshire-NH</string>
+<string>New Jersey-NJ</string>
+<string>New Mexico-NM</string>
+<string>New York-NY</string>
+<string>North Carolina-NC</string>
+<string>North Dakota-ND</string>
+<string>Ohio-OH</string>
+<string>Oklahoma-OK</string>
+<string>Oregon-OR</string>
+<string>Maryland-MD</string>
+<string>Massachusetts-MA</string>
+<string>Michigan-MI</string>
+<string>Minnesota-MN</string>
+<string>Mississippi-MS</string>
+<string>Missouri-MO</string>
+<string>Pennsylvania-PA</string>
+<string>Rhode Island-RI</string>
+<string>South Carolina-SC</string>
+<string>South Dakota-SD</string>
+<string>Tennessee-TN</string>
+<string>Texas-TX</string>
+<string>Utah-UT</string>
+<string>Vermont-VT</string>
+<string>Virginia-VA</string>
+<string>Washington-WA</string>
+<string>West Virginia-WV</string>
+<string>Wisconsin-WI</string>
+<string>Wyoming-WY</string>
+</array>
+</plist>

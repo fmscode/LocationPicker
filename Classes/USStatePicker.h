@@ -18,6 +18,8 @@ typedef NS_ENUM(NSInteger, StateStyle) {
 
 @interface USStatePicker : UIPickerView
 
+- (id)initWithStyle:(StateStyle)style andDelegate:(id)delegate;
+
 @property (nonatomic) id <StatePickerDelegate> stateDelegate;
 @property (nonatomic) StateStyle currentStyle;
 

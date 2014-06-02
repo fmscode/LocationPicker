@@ -37,6 +37,14 @@
     }
     return self;
 }
+- (id)initWithStyle:(StateStyle)style andDelegate:(id)delegate{
+    self = [super init];
+    if (self){
+        [self setCurrentStyle:style];
+        _stateDelegate = delegate;
+    }
+    return self;
+}
 - (void)setupPicker{
     self.delegate = self;
     self.dataSource = self;

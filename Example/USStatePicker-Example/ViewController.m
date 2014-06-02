@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import <USStatePicker.h>
 
-@interface ViewController ()
-
+@interface ViewController () <StatePickerDelegate> {
+    USStatePicker *statePicker;
+}
+@property (nonatomic) IBOutlet UITextField *stateField;
 @end
 
 @implementation ViewController
@@ -19,6 +21,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    statePicker = [[USStatePicker alloc] initWithStyle:StateStyleLong andDelegate:self];
+    _stateField.inputView = statePicker;
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,4 +31,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - StatePicker Delegate
+- (void)statePicked:(NSDictionary *)state{
+    NSLog(@"%@",state);
+    _stateField.text = state[@"name"];
+}
 @end

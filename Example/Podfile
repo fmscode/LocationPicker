@@ -1,1 +1,1 @@
-pod "USStatePicker", :path => "../"
+pod "LocationPicker", :path => "../"

@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LocationPicker: e488215fc6e537ae00389da4a4d88138d3cfed6e
+  LocationPicker: b2fdb4be4c3ac5a0c9d295531248a79f2b93fa16
 
 COCOAPODS: 0.33.1

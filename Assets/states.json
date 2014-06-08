@@ -1,0 +1,206 @@
+[
+  {
+    "name" : "Alabama",
+    "cca2" : "AL"
+  },
+  {
+    "name" : "Alaska",
+    "cca2" : "AK"
+  },
+  {
+    "name" : "Arizona",
+    "cca2" : "AZ"
+  },
+  {
+    "name" : "Arkansas",
+    "cca2" : "AR"
+  },
+  {
+    "name" : "California",
+    "cca2" : "CA"
+  },
+  {
+    "name" : "Colorado",
+    "cca2" : "CO"
+  },
+  {
+    "name" : "Connecticut",
+    "cca2" : "CT"
+  },
+  {
+    "name" : "Delaware",
+    "cca2" : "DE"
+  },
+  {
+    "name" : "District of Columbia",
+    "cca2" : "DC"
+  },
+  {
+    "name" : "Florida",
+    "cca2" : "FL"
+  },
+  {
+    "name" : "Georgia",
+    "cca2" : "GA"
+  },
+  {
+    "name" : "Hawaii",
+    "cca2" : "HI"
+  },
+  {
+    "name" : "Idaho",
+    "cca2" : "ID"
+  },
+  {
+    "name" : "Illinois",
+    "cca2" : "IL"
+  },
+  {
+    "name" : "Indiana",
+    "cca2" : "IN"
+  },
+  {
+    "name" : "Iowa",
+    "cca2" : "IA"
+  },
+  {
+    "name" : "Kansas",
+    "cca2" : "KS"
+  },
+  {
+    "name" : "Kentucky",
+    "cca2" : "KY"
+  },
+  {
+    "name" : "Louisiana",
+    "cca2" : "LA"
+  },
+  {
+    "name" : "Maine",
+    "cca2" : "ME"
+  },
+  {
+    "name" : "Montana",
+    "cca2" : "MT"
+  },
+  {
+    "name" : "Nebraska",
+    "cca2" : "NE"
+  },
+  {
+    "name" : "Nevada",
+    "cca2" : "NV"
+  },
+  {
+    "name" : "New Hampshire",
+    "cca2" : "NH"
+  },
+  {
+    "name" : "New Jersey",
+    "cca2" : "NJ"
+  },
+  {
+    "name" : "New Mexico",
+    "cca2" : "NM"
+  },
+  {
+    "name" : "New York",
+    "cca2" : "NY"
+  },
+  {
+    "name" : "North Carolina",
+    "cca2" : "NC"
+  },
+  {
+    "name" : "North Dakota",
+    "cca2" : "ND"
+  },
+  {
+    "name" : "Ohio",
+    "cca2" : "OH"
+  },
+  {
+    "name" : "Oklahoma",
+    "cca2" : "OK"
+  },
+  {
+    "name" : "Oregon",
+    "cca2" : "OR"
+  },
+  {
+    "name" : "Maryland",
+    "cca2" : "MD"
+  },
+  {
+    "name" : "Massachusetts",
+    "cca2" : "MA"
+  },
+  {
+    "name" : "Michigan",
+    "cca2" : "MI"
+  },
+  {
+    "name" : "Minnesota",
+    "cca2" : "MN"
+  },
+  {
+    "name" : "Mississippi",
+    "cca2" : "MS"
+  },
+  {
+    "name" : "Missouri",
+    "cca2" : "MO"
+  },
+  {
+    "name" : "Pennsylvania",
+    "cca2" : "PA"
+  },
+  {
+    "name" : "Rhode Island",
+    "cca2" : "RI"
+  },
+  {
+    "name" : "South Carolina",
+    "cca2" : "SC"
+  },
+  {
+    "name" : "South Dakota",
+    "cca2" : "SD"
+  },
+  {
+    "name" : "Tennessee",
+    "cca2" : "TN"
+  },
+  {
+    "name" : "Texas",
+    "cca2" : "TX"
+  },
+  {
+    "name" : "Utah",
+    "cca2" : "UT"
+  },
+  {
+    "name" : "Vermont",
+    "cca2" : "VT"
+  },
+  {
+    "name" : "Virginia",
+    "cca2" : "VA"
+  },
+  {
+    "name" : "Washington",
+    "cca2" : "WA"
+  },
+  {
+    "name" : "West Virginia",
+    "cca2" : "WV"
+  },
+  {
+    "name" : "Wisconsin",
+    "cca2" : "WI"
+  },
+  {
+    "name" : "Wyoming",
+    "cca2" : "WY"
+  }
+]

@@ -1,0 +1,14 @@
+PODS:
+  - LocationPicker (0.1.0)
+
+DEPENDENCIES:
+  - LocationPicker (from `../`)
+
+EXTERNAL SOURCES:
+  LocationPicker:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LocationPicker: e488215fc6e537ae00389da4a4d88138d3cfed6e
+
+COCOAPODS: 0.33.1

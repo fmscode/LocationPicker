@@ -8,24 +8,29 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, LocationStyle) {
-    LocationStyleUnitedStates = 0,   // Show all the states in the US.
-    LocationStyleCountries           // Show all countries.
+typedef NS_ENUM(NSInteger, LocationData) {
+    LocationDataUnitedStates = 0,   // Show all the states in the US.
+    LocationDataCountries           // Show all countries.
+};
+
+typedef NS_ENUM(NSInteger, LocationDisplayStyle){
+    LocationDisplayStyleDefault = 0     // Shows just the name.
 };
 
 @protocol LocationPickerDelegate;
 
 @interface LocationPicker : UIPickerView
 
-- (id)initWithStyle:(LocationStyle)style andDelegate:(id<LocationPickerDelegate>)delegate;
+- (id)initWithDataType:(LocationData)type andDelegate:(id<LocationPickerDelegate>)delegate;
 
-@property (nonatomic) LocationStyle currentStyle;
+@property (nonatomic) LocationDisplayStyle currentStyle;
+@property (nonatomic) LocationData dataType;
 @property (nonatomic,assign) id <LocationPickerDelegate> locationDelegate;
 
 @end
 
 @protocol LocationPickerDelegate <NSObject>
 
-- (void)locationPicker:(NSString *)location;
+- (void)locationPicked:(NSDictionary *)location;
 
 @end

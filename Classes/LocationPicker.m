@@ -16,32 +16,51 @@
 
 @implementation LocationPicker
 
-- (id)initWithStyle:(LocationStyle)style andDelegate:(id<LocationPickerDelegate>)delegate{
+- (id)initWithDataType:(LocationData)type andDelegate:(id<LocationPickerDelegate>)delegate{
     self = [super init];
     if (self){
-        _currentStyle = style;
+        _dataType = type;
         _locationDelegate = delegate;
+        [self setupPicker];
     }
     return self;
 }
+
 - (void)setupPicker{
     self.delegate = self;
     self.dataSource = self;
-    if (_currentStyle == LocationStyleUnitedStates) {
-        NSString *statesFile = [[NSBundle mainBundle] pathForResource:@"states" ofType:@"plist"];
-        locations = [NSArray arrayWithContentsOfFile:statesFile];
+    
+    NSString *filePath;
+    if (_dataType == LocationDataUnitedStates) {
+        filePath = [[NSBundle mainBundle] pathForResource:@"states" ofType:@"json"];
     }else{
-        NSString *countriesFile = [[NSBundle mainBundle] pathForResource:@"countries" ofType:@"plist"];
-        locations = [NSArray arrayWithContentsOfFile:countriesFile];
+        filePath = [[NSBundle mainBundle] pathForResource:@"countries" ofType:@"json"];
+    }
+    locations = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options:NSJSONReadingMutableLeaves error:nil];
+}
+- (void)setDataType:(LocationData)dataType{
+    _dataType = dataType;
+    [self setupPicker];
+    [self reloadAllComponents];
+}
+#pragma mark - UIPickerDataSource
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return locations.count;
+}
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    NSDictionary *location = locations[row];
+    if (_currentStyle == LocationDisplayStyleDefault){
+        return location[@"name"];
+    }
+    return nil;
+}
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    if (_locationDelegate && [_locationDelegate respondsToSelector:@selector(locationPicked:)]){
+        [_locationDelegate locationPicked:locations[row]];
     }
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

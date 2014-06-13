@@ -31,6 +31,6 @@ typedef NS_ENUM(NSInteger, LocationDisplayStyle){
 
 @protocol LocationPickerDelegate <NSObject>
 
-- (void)locationPicked:(NSDictionary *)location;
+- (void)locationPicker:(LocationPicker *)picker didPickLocation:(NSDictionary *)location;
 
 @end

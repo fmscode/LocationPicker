@@ -58,8 +58,8 @@
     return nil;
 }
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    if (_locationDelegate && [_locationDelegate respondsToSelector:@selector(locationPicked:)]){
-        [_locationDelegate locationPicked:locations[row]];
+    if (_locationDelegate && [_locationDelegate respondsToSelector:@selector(locationPicker:didPickLocation:)]){
+        [_locationDelegate locationPicker:self didPickLocation:locations[row]];
     }
 }
 

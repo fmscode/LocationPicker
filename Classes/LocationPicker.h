@@ -14,7 +14,8 @@ typedef NS_ENUM(NSInteger, LocationData) {
 };
 
 typedef NS_ENUM(NSInteger, LocationDisplayStyle){
-    LocationDisplayStyleDefault = 0     // Shows just the name.
+    LocationDisplayStyleDefault = 0,
+    LocationDisplayStyleUSPriority
 };
 
 @protocol LocationPickerDelegate;

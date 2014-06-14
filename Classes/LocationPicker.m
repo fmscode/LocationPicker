@@ -43,6 +43,23 @@
     [self setupPicker];
     [self reloadAllComponents];
 }
+- (void)setCurrentStyle:(LocationDisplayStyle)currentStyle{
+    _currentStyle = currentStyle;
+    if (_currentStyle == LocationDisplayStyleUSPriority){
+        if (_dataType == LocationDataCountries){
+            NSPredicate *pred = [NSPredicate predicateWithFormat:@"cca2 = 'US'"];
+            NSArray *found = [locations filteredArrayUsingPredicate:pred];
+            
+            NSInteger index = [locations indexOfObject:found.lastObject];
+            
+            NSMutableArray *locationsMutable = [[NSMutableArray alloc] initWithArray:locations];
+            [locationsMutable insertObject:found.lastObject atIndex:0];
+            [locationsMutable removeObjectAtIndex:index+1];
+            locations = nil;
+            locations = [NSArray arrayWithArray:locationsMutable];
+        }
+    }
+}
 #pragma mark - UIPickerDataSource
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
@@ -52,10 +69,8 @@
 }
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     NSDictionary *location = locations[row];
-    if (_currentStyle == LocationDisplayStyleDefault){
-        return location[@"name"];
-    }
-    return nil;
+
+    return location[@"name"];
 }
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     if (_locationDelegate && [_locationDelegate respondsToSelector:@selector(locationPicker:didPickLocation:)]){

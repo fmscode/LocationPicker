@@ -27,6 +27,7 @@
     
     statePicker = [[LocationPicker alloc] initWithDataType:LocationDataUnitedStates andDelegate:self];
     countryPicker = [[LocationPicker alloc] initWithDataType:LocationDataCountries andDelegate:self];
+    countryPicker.currentStyle = LocationDisplayStyleUSPriority;
     [_stateField setInputView:statePicker];
     [_countryField setInputView:countryPicker];
 }
